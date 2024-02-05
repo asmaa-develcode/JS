@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Crear una página web que utilice la API de Rick y Morty para mostrar cartas de personajes. La página debe tener un filtro de búsqueda que permita al usuario buscar personajes por nombre.
+
+Requisitos:
+Utilizar la API de Rick y Morty para obtener datos de los personajes.
+Mostrar las cartas de los personajes en la página utilizando HTML y CSS.
+Implementar un filtro de búsqueda que permita al usuario buscar personajes por su nombre.
+Utilizar JavaScript para realizar la lógica de búsqueda y renderiza -->
+<!-- API:https://rickandmortyapi.com/api/character/?name=rick -->
+</head>
+<body>
+
+    <input type="text" placeholder="Buscador" id="rick">
+    <div id="rickymortyContainer">
+
+    </div>
+    <script>
+        async function rickYMorty(name){
+            try{
+                const response= await fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
+                const data= await response.json();
+
+            }catch(err){
+                console.log("Nombre no encontrado");
+
+            }
+
+            }
+            function nombreRicky(rickymortyContainer){
+                const nameList=document.getElementById('rickymortyContainer')
+                nameList.innerHTML="";
+                rickymortyContainer
+            }
+        
+            rick.addEventListener
+    </script>
+
+    
+</body>
+</html>
